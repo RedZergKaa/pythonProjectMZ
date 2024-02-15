@@ -1,3 +1,2 @@
 
-kpython:S2208"GImport only needed names or import the module and then use its members.(ùı¥•şÿÿÿÿ8ò‡´ºÚ1
-python:S101"cRename class "Base_Page" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(¬‚Î¦8ò‡´ºÚ1
+python:S101"cRename class "Base_Page" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(¬‚Î¦8·´éÚ1
