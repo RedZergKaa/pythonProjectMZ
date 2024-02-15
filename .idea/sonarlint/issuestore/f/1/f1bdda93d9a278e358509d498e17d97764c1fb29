@@ -1,3 +1,2 @@
 
-fpython:S2208"GImport only needed names or import the module and then use its members.(ø–œ–8ËàÌ×1
 python:S101"aRename class "Test_MZ" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.(•†åª8ËàÌ×1
