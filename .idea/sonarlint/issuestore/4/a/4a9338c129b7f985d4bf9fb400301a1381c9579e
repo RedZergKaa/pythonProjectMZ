@@ -1,0 +1,10 @@
+
+rpython:S1192ê"TDefine a constant instead of duplicating this literal "se:downloadsEnabled" 3 times.( é¾íüÿÿÿÿ
+£python:S1192ë"„Define a constant instead of duplicating this literal "You must enable downloads in order to work with downloadable files." 3 times.(ä—¶†üÿÿÿÿ
+qpython:S3776j"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(˜€³ıÿÿÿÿ
+Zpython:S5655ó"AChange this argument; Function "execute" expects a different type(²Ö´„
+upython:S117Í"XRename this parameter "windowHandle" to match the regular expression ^[_a-z][a-z0-9_]*$.(¬şöıÿÿÿÿÿ
+ppython:S117Ü"XRename this parameter "windowHandle" to match the regular expression ^[_a-z][a-z0-9_]*$.(¼£Óë
+ppython:S117í"XRename this parameter "windowHandle" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÔğÖ°
+upython:S117ü"XRename this parameter "windowHandle" to match the regular expression ^[_a-z][a-z0-9_]*$.(—ù¶ºÿÿÿÿÿ
+upython:S117Š"XRename this parameter "windowHandle" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ş×ÿñúÿÿÿÿ
