@@ -2,15 +2,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import math
-link = "http://suninjuly.github.io/find_link_text"
-
+browser = webdriver.Edge()
 try:
-    browser = webdriver.Edge()
-    browser.get(link)
+    browser.get("http://suninjuly.github.io/find_xpath_form")
+    elements = browser.find_elements(By.XPATH, "//input[@type='text']")
+    for element in elements:
+        element.send_keys("Мой ответ")
 
-    input1 = browser.find_element(By.LINK_TEXT, str(math.ceil(math.pow(math.pi, math.e)*10000)))
-    input1.click()
+    button = browser.find_element(By.XPATH, "//body/div/form/div[6]/button[@type='submit']")
+    button.click()
 
 finally:
-    time.sleep(15)
+    # успеваем скопировать код за 30 секунд
+    time.sleep(30)
+    # закрываем браузер после всех манипуляций
     browser.quit()
+
+# не забываем оставить пустую строку в конце файла

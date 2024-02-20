@@ -8,4 +8,3 @@ def test_button_nsi(open_browser, auth_mz):
     button_nsi.button_main_menu().click()
     time.sleep(1)
     button_nsi.button_builders(4).click()
-    time.sleep(1)

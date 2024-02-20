@@ -61,3 +61,15 @@ D
 testsMD/test_5904.py,4\a\4af640a56cff13a3a756d58ee0aa5c9e727c3395
 D
 testsMD/test_6030.py,c\d\cd365aaba28a1ed4353e47d06789e0bae4e0d2b6
+D
+testsMD/test_6109.py,e\8\e822be13296a2b9964451900132c57406aa10154
+D
+testsMD/test_6110.py,b\1\b1259288b44838eb4715f56bb903792303b09fdb
+D
+testsMD/test_6113.py,f\e\fecc123e5680d59a3595c2f13af3bc06dd7bd019
+D
+testsMD/test_6124.py,0\6\06797d7ac38d8e0c26a98c4b0bc782b8cf4ad2df
+D
+testsMD/test_6182.py,a\b\ab975ff20b1290e125ef99176b40477f93dace0d
+D
+testsMD/test_6830.py,a\f\afccf68c8d917e40f88cbae09917972b4b842975

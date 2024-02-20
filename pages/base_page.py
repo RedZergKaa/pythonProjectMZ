@@ -5,19 +5,18 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-
-
 # Базовый класс для работы со страницей авторизации
 class BasePage:
     def __init__(self, open_browser):
         self.fixture_one = open_browser  # конструктор для вызова фикстуры с драйвером браузера
+        self.driverWait = WebDriverWait(open_browser, 15)
 
     def open_link(self, url):
         try:
             self.fixture_one.get(url)
-            link = WebDriverWait(self.fixture_one, 5).until(EC.visibility_of_element_located((By.ID,
-                                                                                              "bx_breadcrumb_0")))
-            return link  # функция для загрузки страницы
+            WebDriverWait(self.fixture_one, 5).until(EC.visibility_of_element_located((By.ID,
+                                                                                       "bx_breadcrumb_0")))
+            # функция для загрузки страницы
         except Exception as e:
             print(e)
 
@@ -26,7 +25,7 @@ class BasePage:
             return self.fixture_one.find_element(By.XPATH,
                                                  AuthTest.login_field)  # выполняет функцию поиска строки логина
         except Exception as e:
-            print(e)  # закрывает драйвер браузера
+            print(e)
 
     def pass_field(self):
         return self.fixture_one.find_element(By.XPATH,
@@ -40,18 +39,20 @@ class BasePage:
     def button_main_menu(self):
         return self.fixture_one.find_element(By.XPATH,
                                              AuthTest.button_mainMENU)  # выполняет функцию поиска кнопки в главном
-        # меню для перехода
 
     def button_builders(self, button):
         try:
             return self.fixture_one.find_element(By.XPATH, AuthTest.mas_buttons_in_mainMENU[button])  # функция
-            # кнопок в массиве перехода в разделы
+            # кнопок в массиве перехода в разделы главного меню АИС МЗ
 
         except IndexError as e:
             print('Ошибка элемента', e)  #
-
 
     def logout(self):
         return self.fixture_one.find_element(By.XPATH,
                                              AuthTest.button_logout)  # выполняет функцию поиска кнопки в главном
         # меню для перехода
+
+    # функция явного ожидания появления элемента
+    def driver_wait_visibility(self, locator):
+        return self.driverWait.until(EC.visibility_of_element_located((By.XPATH, locator)))

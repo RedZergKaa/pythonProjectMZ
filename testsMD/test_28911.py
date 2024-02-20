@@ -8,5 +8,3 @@ def test_button_analytics(open_browser, auth_mz):
     button_analytics.button_main_menu().click()
     time.sleep(1)
     button_analytics.button_builders(2).click()
-
-    time.sleep(1)

@@ -8,4 +8,3 @@ def test_button_techsupp(open_browser, auth_mz):
     button_techsupp.button_main_menu().click()
     time.sleep(1)
     button_techsupp.button_builders(8).click()
-    time.sleep(1)

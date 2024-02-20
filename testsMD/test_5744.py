@@ -1,7 +1,7 @@
 from pages.base_page import *
 import time
 # тест на авторизацию в Мониторинг Застройщика
-def test_auth_MZ(open_browser):
+def test_auth_mz(open_browser):
     base_page = BasePage(open_browser)  #Объект класса Base_Page
     base_page.open_link(link_to_MB)     #вызов функции для перехода по линку
     base_page.login_field().clear()     #Очистка поля логин, т.к. в поле при открытии прописывается Undefined

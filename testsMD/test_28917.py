@@ -8,4 +8,3 @@ def test_button_aboutsystem(open_browser, auth_mz):
     button_aboutsystem.button_main_menu().click()
     time.sleep(1)
     button_aboutsystem.button_builders(7).click()
-    time.sleep(1)

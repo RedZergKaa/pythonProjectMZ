@@ -8,4 +8,3 @@ def test_button_integer(open_browser, auth_mz):
     button_integer.button_main_menu().click()
     time.sleep(1)
     button_integer.button_builders(6).click()
-    time.sleep(1)
